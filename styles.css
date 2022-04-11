@@ -5,6 +5,34 @@
   --text-low: #757575;
 }
 
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto
+}
+
 body {
   color: var(----main-background);
   font-family: "Roboto", sans-serif;
@@ -17,6 +45,19 @@ body {
 .link {
   text-decoration: none;
   cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 .visually-hidden {
@@ -36,6 +77,17 @@ body {
 
 .header {
   background-color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+
+.header .container {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
 }
 
 .header-logo {
@@ -45,10 +97,12 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-blue);
+  
 }
 
 .header-logo-a {
   color: var(--first-text);
+  margin-right: 93px;
 }
 
 .header-item {
@@ -59,9 +113,23 @@ body {
   color: var(--first-text);
 }
 
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-item:hover,
 .header-item:focus {
   color: var(--main-blue);
+}
+
+.header-contacts {
+  margin-left: 331px;
+  display: flex;
+}
+
+.header-link:last-child {
+  padding-right: 0px;
+  margin-left: 50px;
 }
 
 .header-link {
@@ -83,6 +151,10 @@ body {
   background-color: #2f303a;
 }
 
+.hero .container {
+  display: flex;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -91,6 +163,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: 696px;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -99,7 +173,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -108,6 +182,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  padding: 10px 32px;
+  min-width: 136px;
 }
 
 .hero-btn:hover,
@@ -121,6 +197,18 @@ body {
   background-color: var(----main-background);
 }
 
+.benefits .container {
+  display: flex;
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item {
+  margin-right: 30px;
+}
+
 .benefits-item-up {
   font-weight: 700;
   font-size: 14px;
@@ -128,6 +216,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-text);
+  margin-bottom: 10px;
 }
 
 .benefits-item-low {
@@ -142,6 +231,18 @@ body {
 
 .we-do {
   background-color: var(----main-background);
+}
+
+.we-do-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: 50px;
+}
+
+.we-do-item {
+  flex-basis: calc(100% / 3 - 30px);
+  width: calc((100% - 90px) / 3);
+  margin-left: 30px;
 }
 
 .we-do-title {
@@ -159,6 +260,18 @@ body {
   background-color: #f5f4fa;
 }
 
+.our-team-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: 50px;
+}
+
+.our-team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  width: calc((100% - 90px) / 4);
+  margin-left: 30px;
+}
+
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
@@ -174,6 +287,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-text);
+  margin-top: 30px;
 }
 
 .our-team-item-low {
@@ -183,9 +297,28 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-low);
+  margin-top: 10px;
 }
 
 /*--------------PORTFOLIO------------ */
+
+.pf-btns-item {
+  display: inline;
+}
+
+.pf-project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 50px;
+}
+
+.pf-project-item {
+  flex-basis: calc(100% / 3 - 30px);
+  width: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
 
 .pf-project-item-up {
   font-weight: 700;
@@ -227,6 +360,7 @@ body {
 
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 .footer-logo {
@@ -250,6 +384,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-top: 100px;
 }
 
 .footer-link {
