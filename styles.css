@@ -185,6 +185,7 @@ body {
   min-width: 200px;
   text-align: center;
   margin: 0 auto;
+  border: 0;
 }
 
 .hero-btn:hover,
@@ -323,8 +324,7 @@ body {
   margin-bottom: 50px;
 }
 
-
-.pf-btns-item + .pf-btns-item {
+.pf-btns-li + .pf-btns-li {
   margin-left: 8px;
 }
 
@@ -371,12 +371,19 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
+  border: 0;
 }
 
 .pf-btns-item:hover,
 .pf-btns-item:focus {
   color: #ffffff;
   background-color: var(--main-blue);
+}
+
+.pf-project-border {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }
 
 /*--------------FOOTER------------ */
